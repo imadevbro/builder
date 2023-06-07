@@ -1,0 +1,68 @@
+.imageContainer {
+    position: relative;
+    bottom: 20vw;
+    width: 40vw;
+    border-radius: 1rem;
+    margin-right: 20px;
+}
+
+.imageLayer {
+    width: 40vw;
+    border-radius: inherit;
+}
+
+.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.three {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.four {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.five {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.six {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.seven {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+.eight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}

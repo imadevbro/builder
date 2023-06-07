@@ -17,11 +17,11 @@ const layeredImageSlice = createSlice({
                 url: '/images/Traits/Base/Grey.png'
             },
             clothes: {
-                name: 'Peaky',
-                url: '/images/Traits/Clothes/Peaky.png'
+                name: 'Fur Coat',
+                url: '/images/Traits/Clothes/Fur Coat.png'
             },
             chain: {
-                name: 'Chain',
+                name: 'Sultan',
                 url: '/images/Traits/Chain/Sultan.png'
             },
             head: {
@@ -38,8 +38,18 @@ const layeredImageSlice = createSlice({
             }
         }
     },
-    reducers: {}
+    reducers: {
+        // changeLayer payload example: {category: mouth, name: Beard, url: /images/Traits/Mouth/Beard.png}
+        changeLayer: (state, action) => {
+            state.layeredImage[action.payload.category] = action.payload;
+        }
+    }
 });
 
+
+
+
+export const { changeLayer } = layeredImageSlice.actions
 export const selectLayeredImage = (state) => state.layeredImage.layeredImage;
 export default layeredImageSlice.reducer;
+

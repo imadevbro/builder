@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { Traits } from './features/traits/Traits';
 import './App.css';
 import { LayeredImage } from './features/layeredImage/LayeredImage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <LayeredImage />
         </div>
         <div className="form-container">
+          <Traits />
         </div>
       </main>
     </div>

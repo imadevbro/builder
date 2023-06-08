@@ -6,7 +6,7 @@ import styles from './LayeredImage.module.css'
 
 export function LayeredImage() {
     const imageLayers = useSelector(selectLayeredImage);
-    console.log("Image Layers: ", imageLayers.background.url);
+    console.log("Image Layers in component: ", imageLayers);
     return (
         <div className={styles.imageContainer} >
             <img src={imageLayers.background.url} className={`${styles.imageLayer} ${styles.one}`} />
